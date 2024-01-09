@@ -12,12 +12,12 @@ def main():
     openai_key = st.secrets["openai_api_key"]
     
     # Set as environment variable
-    os.environ["OPENAI_API_KEY"] = openai_key
+    os.environ["openai_api_key"] = openai_key
 
     # Check if set correctly
     st.write("Secret Key:", openai_key)
     st.write("Environment variables set:", 
-        os.environ["OPENAI_API_KEY"] == openai_key)
+        os.environ["openai_api_key"] == openai_key)
 
     load_dotenv()
     st.set_page_config(page_title="May I Help You")
