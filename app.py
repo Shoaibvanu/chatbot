@@ -9,8 +9,6 @@ from langchain.llms import OpenAI
 from langchain.callbacks import get_openai_callback
 
 def main():
-    
-
     load_dotenv()
     st.set_page_config(page_title="May I Help You")
     st.header("May I Help You 💬")
